@@ -10,3 +10,28 @@ Font utilizzati:
 titoli: ‘Edu Tas Beginner’, sans-serif;d ate: ‘Sometype Mono’, ‘monospace’; (Dovreste sapere a questo punto cosa e come prendere da Google Fonts… :occhiolino:)
 
 */
+
+const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
+
+fetch(endpoint)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    const rowEl = document.querySelector(".row");
+    data.forEach((singolCard) => {
+      const { title, date, url } = singolCard;
+      const divColEl = document.createElement("div");
+      divColEl.classList.add("col");
+      divColEl.innerHTML = `
+        <div class="card">
+            <div class="card_up">
+                <img src="${url}" alt="">
+            </div>
+            <div class="card_down">
+                <p>${title}</p>
+            </div>
+        </div>
+    `;
+      rowEl.appendChild(divColEl);
+    });
+  });

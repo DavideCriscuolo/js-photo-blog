@@ -29,7 +29,9 @@ fetch(endpoint)
             </div>
             <div class="card_down">
                 <p>${title}</p>
+                <span>${date}</span>
             </div>
+
         </div>
     `;
       rowEl.appendChild(divColEl);

@@ -46,8 +46,10 @@ main {
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    .col {
-      position: relative;
+    .container_pin {
+      display: flex;
+      justify-content: center;
+      margin: -1rem;
       .pin {
         height: 50px;
         width: 50px;
@@ -60,6 +62,10 @@ main {
         );
         border-radius: 50%;
       }
+    }
+
+    .col {
+      position: relative;
     }
 
     .card {
@@ -92,15 +98,6 @@ main {
       .row {
         padding: 50px;
         .col {
-          .pin {
-            height: 50px;
-            width: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            top: 0px;
-            left: 217px;
-          }
           padding: 20px;
           width: calc(100% / 12 * 12);
         }
@@ -117,15 +114,6 @@ main {
       .row {
         padding: 50px;
         .col {
-          .pin {
-            height: 50px;
-            width: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            top: 0px;
-            left: 200px;
-          }
           padding: 20px;
           width: calc(100% / 12 * 12);
         }
@@ -139,15 +127,6 @@ main {
       width: 960px;
       .row {
         .col {
-          .pin {
-            height: 50px;
-            width: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            top: 0px;
-            left: 195px;
-          }
           padding: 20px;
           width: calc(100% / 12 * 6);
         }
@@ -163,15 +142,6 @@ main {
       .row {
         padding: 50px;
         .col {
-          .pin {
-            height: 50px;
-            width: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            top: 0px;
-            left: 163px;
-          }
           padding: 20px;
           width: calc(100% / 12 * 4);
         }

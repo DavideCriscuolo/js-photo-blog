@@ -5,6 +5,12 @@ Sfruttando gli screen e gli asset in allegato riproduciamo la grafica proposta i
 Bonus
 rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il titolo abbia una dimensione adeguata */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --bg-color-oliva: #92c952;
   --bg-color-purple: #771796;
@@ -12,4 +18,23 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
   --bg-color-fuchsia: #d32776;
   --bg-color-pink: #f66b97;
   --bg-color-blu-water: #56a8c2;
+}
+
+header {
+  height: 150px;
+  background-image: url(./../img/wall.png);
+
+  .title {
+    padding: 30px 0px 30px;
+    h1 {
+      font-family: "Edu TAS Beginner", sans-serif;
+      font-size: 70px;
+      text-align: center;
+    }
+  }
+}
+
+main {
+  background-image: url(./../img/cork.png);
+  height: 1200px;
 }

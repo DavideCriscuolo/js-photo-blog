@@ -51,11 +51,14 @@ main {
       .pin {
         height: 50px;
         width: 50px;
-        background-color: red;
+        background: #55220b;
+        background: radial-gradient(
+          circle,
+          rgb(234, 69, 54) 0%,
+          rgb(245, 19, 19) 50%,
+          rgba(0, 0, 0, 1) 100%
+        );
         border-radius: 50%;
-        position: absolute;
-        top: 0px;
-        left: 150px;
       }
     }
 
@@ -89,6 +92,15 @@ main {
       .row {
         padding: 50px;
         .col {
+          .pin {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 217px;
+          }
           padding: 20px;
           width: calc(100% / 12 * 12);
         }
@@ -105,6 +117,15 @@ main {
       .row {
         padding: 50px;
         .col {
+          .pin {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+          }
           padding: 20px;
           width: calc(100% / 12 * 12);
         }
@@ -118,6 +139,15 @@ main {
       width: 960px;
       .row {
         .col {
+          .pin {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 195px;
+          }
           padding: 20px;
           width: calc(100% / 12 * 6);
         }
@@ -133,6 +163,15 @@ main {
       .row {
         padding: 50px;
         .col {
+          .pin {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 163px;
+          }
           padding: 20px;
           width: calc(100% / 12 * 4);
         }

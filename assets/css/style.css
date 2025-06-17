@@ -4,3 +4,12 @@ Sfruttando gli screen e gli asset in allegato riproduciamo la grafica proposta i
 
 Bonus
 rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano man mano una sotto l’altra ed il titolo abbia una dimensione adeguata */
+
+:root {
+  --bg-color-oliva: #92c952;
+  --bg-color-purple: #771796;
+  --bg-color-lime: #24f355;
+  --bg-color-fuchsia: #d32776;
+  --bg-color-pink: #f66b97;
+  --bg-color-blu-water: #56a8c2;
+}

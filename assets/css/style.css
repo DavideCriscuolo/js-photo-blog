@@ -46,12 +46,26 @@ main {
       justify-content: space-around;
       flex-wrap: wrap;
     }
+    .col {
+      position: relative;
+      .pin {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 150px;
+      }
+    }
+
     .card {
       max-height: 600px;
       max-width: 500px;
       background-color: white;
       padding: 30px 30px 0px 30px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
       .card_up {
         img {
           width: 100%;

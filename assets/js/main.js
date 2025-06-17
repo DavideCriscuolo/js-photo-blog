@@ -23,6 +23,7 @@ fetch(endpoint)
       const divColEl = document.createElement("div");
       divColEl.classList.add("col");
       divColEl.innerHTML = `
+         <div class="pin"></div>
         <div class="card">
          <div class="card_up">
            <img src="${url}" alt="">

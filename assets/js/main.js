@@ -24,16 +24,14 @@ fetch(endpoint)
       divColEl.classList.add("col");
       divColEl.innerHTML = `
         <div class="card">
-            <div class="card_up">
-                <img src="${url}" alt="">
+         <div class="card_up">
+           <img src="${url}" alt="">
             </div>
             <div class="card_down">
                 <p>${title}</p>
                 <span>${date}</span>
             </div>
-
-        </div>
-    `;
+        </div> `;
       rowEl.appendChild(divColEl);
     });
   });

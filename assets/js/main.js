@@ -23,7 +23,7 @@ fetch(endpoint)
       const divColEl = document.createElement("div");
       divColEl.classList.add("col");
       divColEl.innerHTML = `
-          <div class="container_pin"><div class="pin"></div> </div>
+          <div class="container_pin d-flex-center"><div class="pin"></div> </div>
         <div class="card">
          <div id="cardUp" class="card_up">
            <img  src="${url}" alt="">
@@ -48,6 +48,21 @@ fetch(endpoint)
           overlayEl.classList.remove("d-flex-center");
           overlayEl.classList.add("d-none");
         });
+      });
+      const cardEl = divColEl.querySelector(".card");
+      console.log(cardEl);
+
+      const containerPinEl = divColEl.querySelector(".pin");
+
+      cardEl.addEventListener("mouseenter", function () {
+        cardEl.classList.add("hover");
+        containerPinEl.classList.remove("d-flex-center");
+        containerPinEl.classList.add("d-none");
+      });
+      cardEl.addEventListener("mouseleave", function () {
+        cardEl.classList.remove("hover");
+        containerPinEl.classList.remove("d-none");
+        containerPinEl.classList.add("d-flex-center");
       });
     });
   });

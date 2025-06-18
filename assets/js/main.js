@@ -67,6 +67,6 @@ fetch(endpoint)
 
 //Appunti
 /*
- per prendere  l immagine o qualcosaltro allinterno dell markup generato andiamo a dichiare una costante  che indichi il nostro elemento e con divColEl.querySelector("img") andiamo a dire che l elemento con classe img è presente nel elemento divColEl
-  const img = divColEl.querySelector("img");
+ per prendere  l immagine o qualcosaltro allinterno dell markup generato andiamo a dichiare una costante  che indichi il nostro elemento e con cardEl.querySelector("img"); andiamo a dire che l elemento con classe img è presente nel elemento cardEl
+;
   */

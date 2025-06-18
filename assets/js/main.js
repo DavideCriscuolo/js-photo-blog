@@ -26,7 +26,7 @@ fetch(endpoint)
           <div class="container_pin"><div class="pin"></div> </div>
         <div class="card">
          <div id="cardUp" class="card_up">
-           <img id="link" src="${url}" alt="">
+           <img  src="${url}" alt="">
             </div>
             <div class="card_down">
                 <p>${title}</p>
@@ -34,9 +34,7 @@ fetch(endpoint)
             </div>
         </div> `;
       rowEl.appendChild(divColEl);
-    });
-    const images = document.querySelectorAll("img");
-    images.forEach((img) => {
+      const img = divColEl.querySelector("img");
       img.addEventListener("click", function (e) {
         e.preventDefault();
         const overlayEl = document.querySelector(".overlay");

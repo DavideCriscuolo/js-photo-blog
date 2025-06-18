@@ -20,6 +20,19 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
   --bg-color-blu-water: #56a8c2;
 }
 
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   min-height: 1200px;
   header {
@@ -98,9 +111,7 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;

@@ -25,8 +25,8 @@ fetch(endpoint)
       divColEl.innerHTML = `
           <div class="container_pin"><div class="pin"></div> </div>
         <div class="card">
-         <div class="card_up">
-           <img src="${url}" alt="">
+         <div id="cardUp" class="card_up">
+           <a class="link" href=""><img src="${url}" alt=""></a>
             </div>
             <div class="card_down">
                 <p>${title}</p>
@@ -34,5 +34,21 @@ fetch(endpoint)
             </div>
         </div> `;
       rowEl.appendChild(divColEl);
+    });
+    const aEL = document.querySelectorAll(".link");
+    console.log(aEL);
+    aEL.forEach((a) => {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        const overlayEl = document.querySelector(".overlay");
+        overlayEl.classList.remove("d-none");
+        overlayEl.classList.add("d-flex-center");
+        console.log("object");
+        const buttonClose = document.getElementById("closeModal");
+        buttonClose.addEventListener("click", function () {
+          overlayEl.classList.remove("d-flex-center");
+          overlayEl.classList.add("d-none");
+        });
+      });
     });
   });

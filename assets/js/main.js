@@ -23,7 +23,7 @@ fetch(endpoint)
       const divColEl = document.createElement("div");
       divColEl.classList.add("col");
       divColEl.innerHTML = `
-          <div class="container_pin d-flex-center"><div class="pin"></div> </div>
+          <div class="container_pin d-flex-center"><img class="pin" src="./assets/img/pin.svg" alt=""> </div>
         <div class="card">
          <div id="cardUp" class="card_up">
            <img  src="${url}" alt="">
@@ -66,3 +66,9 @@ fetch(endpoint)
       });
     });
   });
+
+//Appunti
+/*
+ per prendere  l immagine o qualcosaltro allinterno dell markup generato andiamo a dichiare una costante  che indichi il nostro elemento e con divColEl.querySelector("img") andiamo a dire che l elemento con classe img è presente nel elemento divColEl
+  const img = divColEl.querySelector("img");
+  */

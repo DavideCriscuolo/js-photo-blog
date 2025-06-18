@@ -67,14 +67,6 @@ body {
         .pin {
           height: 50px;
           width: 50px;
-          background: #55220b;
-          background: radial-gradient(
-            circle,
-            rgb(234, 69, 54) 0%,
-            rgb(245, 19, 19) 50%,
-            rgba(0, 0, 0, 1) 100%
-          );
-          border-radius: 50%;
         }
       }
 

@@ -26,7 +26,7 @@ fetch(endpoint)
           <div class="container_pin"><div class="pin"></div> </div>
         <div class="card">
          <div id="cardUp" class="card_up">
-           <a class="link" href=""><img src="${url}" alt=""></a>
+           <img id="link" src="${url}" alt="">
             </div>
             <div class="card_down">
                 <p>${title}</p>
@@ -35,14 +35,15 @@ fetch(endpoint)
         </div> `;
       rowEl.appendChild(divColEl);
     });
-    const aEL = document.querySelectorAll(".link");
-    console.log(aEL);
-    aEL.forEach((a) => {
-      a.addEventListener("click", function (e) {
+    const images = document.querySelectorAll("img");
+    images.forEach((img) => {
+      img.addEventListener("click", function (e) {
         e.preventDefault();
         const overlayEl = document.querySelector(".overlay");
         overlayEl.classList.remove("d-none");
         overlayEl.classList.add("d-flex-center");
+        const imgEl = document.getElementById("imgModal");
+        imgEl.src = url;
         console.log("object");
         const buttonClose = document.getElementById("closeModal");
         buttonClose.addEventListener("click", function () {

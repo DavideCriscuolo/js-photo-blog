@@ -105,8 +105,7 @@ body {
     }
   }
   .hover {
-    transform: scale(1.25);
-    transform: rotate(10deg);
+    transform: rotate(10deg) scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
@@ -115,7 +114,6 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-
     position: fixed;
     top: 0;
     left: 0;

@@ -16,7 +16,6 @@ const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 fetch(endpoint)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const rowEl = document.querySelector(".row");
     data.forEach((singolCard) => {
       const { title, date, url } = singolCard;
@@ -34,7 +33,8 @@ fetch(endpoint)
             </div>
         </div> `;
       rowEl.appendChild(divColEl);
-      const img = divColEl.querySelector("img");
+      const cardEl = divColEl.querySelector(".card");
+      const img = cardEl.querySelector("img");
       img.addEventListener("click", function (e) {
         e.preventDefault();
         const overlayEl = document.querySelector(".overlay");
@@ -42,15 +42,13 @@ fetch(endpoint)
         overlayEl.classList.add("d-flex-center");
         const imgEl = document.getElementById("imgModal");
         imgEl.src = url;
-        console.log("object");
+
         const buttonClose = document.getElementById("closeModal");
         buttonClose.addEventListener("click", function () {
           overlayEl.classList.remove("d-flex-center");
           overlayEl.classList.add("d-none");
         });
       });
-      const cardEl = divColEl.querySelector(".card");
-      console.log(cardEl);
 
       const containerPinEl = divColEl.querySelector(".pin");
 

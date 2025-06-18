@@ -20,76 +20,93 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
   --bg-color-blu-water: #56a8c2;
 }
 
-header {
-  height: 150px;
-  background-image: url(./../img/wall.png);
-
-  .title {
-    padding: 30px 0px 30px;
-    h1 {
-      font-family: "Edu TAS Beginner", sans-serif;
-      font-size: 70px;
-      text-align: center;
-    }
-  }
-}
-
-main {
-  background-image: url(./../img/cork.png);
+body {
   min-height: 1200px;
-  .container {
-    padding: 30px 0px 30px;
+  header {
+    height: 150px;
+    background-image: url(./../img/wall.png);
 
-    .row {
+    .title {
       padding: 30px 0px 30px;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    .container_pin {
-      display: flex;
-      justify-content: center;
-      margin: -1rem;
-      .pin {
-        height: 50px;
-        width: 50px;
-        background: #55220b;
-        background: radial-gradient(
-          circle,
-          rgb(234, 69, 54) 0%,
-          rgb(245, 19, 19) 50%,
-          rgba(0, 0, 0, 1) 100%
-        );
-        border-radius: 50%;
+      h1 {
+        font-family: "Edu TAS Beginner", sans-serif;
+        font-size: 70px;
+        text-align: center;
       }
     }
+  }
 
-    .col {
-      position: relative;
-    }
+  main {
+    background-image: url(./../img/cork.png);
+    min-height: 1200px;
+    .container {
+      padding: 30px 0px 30px;
 
-    .card {
-      max-height: 600px;
-      max-width: 500px;
-      background-color: white;
-      padding: 30px 30px 0px 30px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-      .card_up {
-        img {
-          width: 100%;
+      .row {
+        padding: 30px 0px 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .container_pin {
+        display: flex;
+        justify-content: center;
+        margin: -1rem;
+        .pin {
+          height: 50px;
+          width: 50px;
+          background: #55220b;
+          background: radial-gradient(
+            circle,
+            rgb(234, 69, 54) 0%,
+            rgb(245, 19, 19) 50%,
+            rgba(0, 0, 0, 1) 100%
+          );
+          border-radius: 50%;
         }
       }
-      .card_down {
-        font-family: "Edu TAS Beginner", sans-serif;
-        padding: 20px 0px 20px 0px;
-        p {
-          padding: 10px 0px 10px 0px;
+
+      .col {
+        position: relative;
+      }
+
+      .card {
+        max-height: 600px;
+        max-width: 500px;
+        background-color: white;
+        padding: 30px 30px 0px 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        .card_up {
+          img {
+            width: 100%;
+          }
+        }
+        .card_down {
+          font-family: "Edu TAS Beginner", sans-serif;
+          padding: 20px 0px 20px 0px;
+          p {
+            padding: 10px 0px 10px 0px;
+          }
         }
       }
     }
   }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
+
 @media screen and (max-width: 575px) {
   main {
     .container {
